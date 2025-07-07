@@ -1,9 +1,59 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
-</body>
+   <head>
+	<title>About me</title>
+        <link href="aboutMe.css" rel="stylesheet" type="text/css">
+        <style>
+            li{
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="font-family:serif">Trisha's personal webpage</h1>
+	<center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0LqRn0oJPV05IOGJLqCZdVPcDsi0lOb4JZQ&s" height = 200 width=inherit></center>
+	<h2>Contents</h2>
+        <ul>
+            <a href=#facts><li>Facts</li></a>
+            <a href="#kwk"><li>Kode With Klossy journey</li></a>
+            <a href="#quiz"><li>Quiz question</li></a>
+        </ul>
+        <p id='facts'>Facts about me:</p>
+        <ol>
+            <li>I live in the UK.</li>
+            <li>I have a dog!</li>
+            <li>I love Maths and CS :) </li>
+        </ol>
+	<p id="kwk">Kode With Klossy</p>
+	<p><a href = "kodewithklossy.com">Kode With Klossy</a> is an amazing organisation for young women interested in entering the field of Computer Science.</p>
+        <p>KWK programmes offered:</p>
+        <ul>
+            <li>Web development</li>
+            <li>Data science</li>
+	    <li>Mobile app development</li>
+	    <li>Machine learning</li>
+        </ul>
+        <h1 id="quiz">Question</h1>
+        <form name="question">
+            <p id="box">Which is better - cats or dogs?</p> 
+                Answer: <input type="text" name="answer"><br><br>
+            <button type="button" onclick="validate()">Show answer</button>
+        </form>
+	<script>
+            function validate()
+            {
+                var x = document.forms["question"]["answer"].value;
+                if (x == "") {
+                    document.getElementById("box").style.color="red"; 
+	           }
+	           else if (x == "dogs"){
+		          alert("Correct!");	
+	           }
+               else{
+                   alert("Incorrect.");
+               }
+            }
+        </script>
+        <p>Click <a href="play2048.co">here</a> if you are bored.</p>
+    </body>
 </html>
