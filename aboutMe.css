@@ -1,0 +1,17 @@
+body 
+{
+    background-color: black;
+    font-family: sans-serif;
+    color: deeppink;
+}
+
+img {   
+  opacity: 1; /*initial opacity*/ 
+  transition: opacity 0.5s ease;   
+}
+ 
+img:hover { 
+ 
+  opacity: 0.8; /*final opacity after hovering*/
+ 
+} 
